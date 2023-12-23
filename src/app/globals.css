@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.radiustopright{
+  border-top-right-radius: 150px;
+}
