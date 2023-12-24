@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import BtnPerfil from '../btnperfil'
 import VertMenu from '../vertmenu'
 import { usePathname } from 'next/navigation'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,7 +28,9 @@ export default function LayoutProvider({
       <main className='bg-slate-200 h-screen w-screen flex'>
       <div className='h-full w-96 flex-col justify-between'>
         <div className='w-full h-36'>
-
+            <Link href={"/"} className='w-full h-full overflow-hidden flex items-center pt-8'>
+                <Image width={500} height={400} src="/assets/Agenda_Pro_Logo_-removebg-preview.png" alt="" />
+            </Link>
         </div>
         <div className='bg-[#5b7cfd] w-full h-[calc(100%-9rem)] radiustopright pt-36 pl-5'>
           <VertMenu/>
