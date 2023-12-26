@@ -41,7 +41,7 @@ export default function LayoutProvider({
           <span className='text-black text-5xl font-bold'><Page/></span>
           <BtnPerfil/>
         </div>
-        <div className='bg-red-600 h-[calc(98%-8rem)] w-[90%]'>
+        <div className='h-[calc(98%-8rem)] w-[90%]'>
         {children}
         </div>
       </div>
