@@ -27,7 +27,7 @@ export default function LayoutProvider({
       <body className={inter.className}>
       <main className='bg-slate-200 h-screen w-screen flex'>
       <div className='h-full w-96 flex-col justify-between'>
-        <div className='w-full h-36'>
+        <div className='w-full h-36 overflow-hidden'>
             <Link href={"/"} className='w-full h-full overflow-hidden flex items-center pt-8'>
                 <Image width={500} height={400} src="/assets/Agenda_Pro_Logo_-removebg-preview.png" alt="" />
             </Link>
@@ -37,11 +37,11 @@ export default function LayoutProvider({
         </div>
       </div>
       <div className='h-full w-[calc(100%-24rem)] flex flex-col items-center'>
-        <div className='h-36 w-[90%] flex justify-between items-center'>
+        <div className='h-32 w-[90%] flex justify-between items-center'>
           <span className='text-black text-5xl font-bold'><Page/></span>
           <BtnPerfil/>
         </div>
-        <div className='bg-red-600 h-[calc(95%-9rem)] w-[90%]'>
+        <div className='bg-red-600 h-[calc(98%-8rem)] w-[90%]'>
         {children}
         </div>
       </div>
