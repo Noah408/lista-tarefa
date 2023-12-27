@@ -1,8 +1,6 @@
 'use client'
 
 import { ChevronDown, Plus, Search } from "lucide-react";
-import Link from "next/link";
-import DropdownCategoria from "../component/dropdowncategoria";
 import LineTarefa from "../component/linetarefa";
 import ModalTarefa from "../component/modaltarefa";
 import { Button, useDisclosure } from "@nextui-org/react";
@@ -15,7 +13,6 @@ export default function Tarefas() {
       <div className="w-full h-full flex flex-col">
         <div className="w-full h-16 flex justify-between">
           <div className="h-14 w-fit flex gap-4">
-            <DropdownCategoria/>
             <ModalTarefa />
           </div>
           <div className="w-96 h-12 bg-white rounded-xl overflow-hidden flex items-center">
@@ -25,7 +22,6 @@ export default function Tarefas() {
         </div>
         <div className="w-full h-14 bg-[#5b7cfd] rounded-xl flex items-center justify-between px-9">
             <span className="text-white text-xl">Nome</span>
-            <span className="text-white text-xl">Categotia</span>
             <span className="text-white text-xl">Data</span>
             <span className="text-white text-xl">Assunto</span>
             <ChevronDown color="#ffffff" />
